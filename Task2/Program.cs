@@ -1,11 +1,17 @@
 ﻿// Напишите программу, которая принимает на вход число и выдаёт сумму цифр в числе.
 
-Console.WriteLine("Input number   ");
-string number = Console.ReadLine()!;
-int numlength = number.Length;
-int sum = 0;
-for(int j = 0; j <numlength; j++)
+
+int GetSumDigit(int number)
 {
-sum +=(number[j] - '0'); 
+    Console.WriteLine("Input number   ");
+    string number = Console.ReadLine()!;
+    int numlength = number.Length;
+    int sumdigit = 0;
+    for(int j = 0; j <numlength; j++)
+    {
+    sumdigit +=(number[j] - '0'); 
+    }
+    return sumdigit;
 }
-Console.WriteLine($"Sum of digits in number{number} = {sum}");
+
+Console.WriteLine($"Sum of digits in number{number} = {sumdigit}");
