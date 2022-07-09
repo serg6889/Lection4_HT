@@ -11,6 +11,7 @@ int GetRate(double numA, double numB)
   return result;
 }
 
+
   Console.Write("Enter number A: ");
   int numA = Convert.ToInt32(Console.ReadLine());
   Console.Write("Enter number B: ");
