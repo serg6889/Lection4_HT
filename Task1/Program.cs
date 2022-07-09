@@ -13,9 +13,9 @@ int GetRate(double numA, double numB)
 
 
   Console.Write("Enter number A: ");
-  int numA = Convert.ToInt32(Console.ReadLine());
+  double numA = Convert.ToDouble(Console.ReadLine());
   Console.Write("Enter number B: ");
-  int numB = Convert.ToInt32(Console.ReadLine());
+  double numB = Convert.ToDouble(Console.ReadLine());
 
   int getrate = GetRate(numA, numB);
   Console.Write("GetRate = " + getrate);
